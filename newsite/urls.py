@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 from home.views import *
 
 urlpatterns = [
-    path("", home, name='home'),
+    path("",login_page,name='login_page'),
     path("delete-recipe/<int:id>/" , delete_recipe , name="delete_recipe"),
     path('update-recipe/<int:id>/', update_recipe, name='update_recipe'),
     path('recipe/', recipe_view, name='recipe_view'),
